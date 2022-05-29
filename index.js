@@ -1,11 +1,55 @@
 // TODO: Buatlah data dari kedua user di sini
 // Tentukan tipe data dan struktur data yang menurut kalian tepat
 // Kalian bisa membuat variabel lain untuk dimasukkan ke dalam atribut user agar lebih mudah dibaca
-const firstUser = {};
-const secondUser = {};
+
+// Monica's
+
+const arColorMonica = ["Yellow", "Pink", "White", "Purple"];
+let setColorMonica = new Set(arColorMonica);
+const arRestoMonica = ["Bento", "Sushi", "Pancake", "Eggy", "Tempura", "Bento", "Eggy", "Padang", "Tteok", "Sushi", "Sushi"];
+let setRestoMonica = new Set(arRestoMonica);
+const educationMonica = [
+    {name: "SD 01", city: "Jakarta", graduate: 2016},
+    {name: "SMP 02", city: "Jakarta", graduate: 2019},
+    {name: "SMA 03", city: "Tangerang"},
+];
+
+// Wendy's
+
+const arColorWendy = ["Blue", "Black", "Grey"];
+let setColorWendy = new Set(arColorWendy);
+const arRestoWendy = ["Tempura", "Bento", "Sushi", "Pancake", "Padang", "Katsu", "Geprek", "Pancake", "Eggy"];
+let setRestoWendy = new Set(arRestoWendy);
+const educationWendy = [
+    {name: "SD 02", city: "Jakarta", graduate: 2010},
+    {name: "SMP 03", city: "Bogor", graduate: 2013},
+    {name: "SMA 01", city: "Surabaya", graduate: 2016},
+    {name: "Universitas Maju", city: "Tangerang"},
+];
+
+const firstUser = {
+    name: "Monica",
+    age: 17,
+    email: "monica@dingdong.com",
+    favoriteColor: [...setColorMonica],
+    isHavePet: "Yes",
+    education: [...educationMonica],
+    favoriteRestaurant: [...setRestoMonica],
+};
+const secondUser = {
+    name: "Wendy",
+    age: 23,
+    email: "wendy@dingdong.com",
+    favoriteColor: [...setColorWendy],
+    isHavePet: "No",
+    education: [...educationWendy],
+    favoriteRestaurant: [...setRestoWendy],
+};
 
 // TODO: Masukkan hasil akhir dari kedua user di sini
 const users = [];
+users.push(firstUser);
+users.push(secondUser);
 
 // ! JANGAN MODIFIKASI LINE DI BAWAH
 function main() {
